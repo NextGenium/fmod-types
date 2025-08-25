@@ -1454,7 +1454,7 @@ declare namespace Fmod {
         name: string;
         execute: () => void;
         keySequence?: string;
-        isEnabled?: boolean;
+        isEnabled?: boolean | (() => boolean);
         isChecked?: boolean;
         subMenuItems?: MenuItemDescription[];
     }
